@@ -9,7 +9,7 @@
 <body>
     <h1>Sélectionnez une section :</h1>
     <ul>
-        <li><a href="arp.php">ARP</a></li>
+        <li><a href="protocole.php">Protocoles</a></li>
         <!-- Ajoutez d'autres sections au besoin -->
     </ul>
 </body>

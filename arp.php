@@ -48,7 +48,6 @@
             popup.addEventListener('click', closePopup);
         }
 
-
         function closePopup() {
             var popup = document.getElementById('popup');
             popup.style.opacity = 0;
@@ -109,7 +108,6 @@
                     radioElements[3].value = "d";
                     break;
 
-                // Ajoutez d'autres cas pour les questions suivantes au besoin
                 default:
                     // Si toutes les questions ont été posées, réinitialisez la variable currentQuestion
                     currentQuestion = 1;
@@ -123,6 +121,28 @@
             }
         }
 
+        function popupButtonClick() {
+            if (currentQuestion < 4) {
+                changeQuestion();
+            } else {
+                showPopupFinal();
+            }
+        }
+
+        function showPopupFinal() {
+    var popupButton = document.getElementById('popup-button');
+    
+    // Redirigez vers la page "section.php" lorsque le bouton est cliqué
+    popupButton.onclick = function() {
+        window.location.href = "section.php";
+    };
+
+    var popupText = document.getElementById('popup-text');
+    popupText.innerHTML = "Bravo, tu es désormais un vrai professionnel du protocole ARP.<br>Voulez-vous retourner aux sections ou en savoir plus sur le protocole ARP ?";
+    popupButton.innerHTML = "Retourner aux sections";
+    showPopup();
+}
+
         function submitForm(event) {
             event.preventDefault(); // Empêche le rechargement de la page
             var reponse = document.querySelector('input[name="reponse"]:checked').value;
@@ -134,7 +154,7 @@
                 if (currentQuestion < 4) {
                     showPopup();
                 } else {
-                    closePopup();
+                    showPopupFinal();
                 }
             } else {
                 document.getElementById('result').innerHTML = "<p>Désolé, c'est incorrect.</p>";
@@ -162,8 +182,10 @@
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
             <h1>Félicitations !</h1>
-            <p>Voulez-vous répondre à la prochaine question?</p>
-            <button onclick="changeQuestion()">Répondre à la prochaine question</button>
+            <div id="popup-text">
+                <!-- Le texte du pop-up variera en fonction de la situation -->
+            </div>
+            <button id="popup-button" onclick="popupButtonClick()">Répondre à la prochaine question</button>
         </div>
     </div>
 
