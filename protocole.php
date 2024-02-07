@@ -10,6 +10,9 @@
     <h1>Sélectionnez un quiz sur les protocoles :</h1>
     <ul>
         <li><a href="arp.php">ARP (Address Resolution Protocol)</a></li>
+        <li><a href="dns.php">DNS (Domain Name System)</a></li>
+        <li><a href="dhcp.php">DHCP (Dynamic Host Configuration Protocol)</a></li>
+        <li><a href="http.php">HTTP  (HyperText Transfer Protocol)</a></li>
         <!-- Ajoutez d'autres quizz sur les protocoles au besoin -->
     </ul>
 </body>

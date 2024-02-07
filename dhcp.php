@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sur le Protocole ARP</title>
+    <title>Quiz sur le Protocole DHCP</title>
     <style>
-        /* Style pour le pop-up */
+        /* Styles pour le pop-up */
         .popup {
             display: none;
             position: fixed;
@@ -72,42 +72,41 @@
 
             switch (currentQuestion) {
                 case 2:
-                    questionElement.innerHTML = "Qu'est-ce qu'une attaque ARP?";
-                    radioElements[0].nextSibling.nodeValue = " Une attaque visant à compromettre les informations stockées dans les cookies d'un navigateur.";
-                    radioElements[1].nextSibling.nodeValue = " Une attaque ciblant le protocole de résolution d'adresse pour associer de manière incorrecte des adresses IP à des adresses MAC.";
-                    radioElements[2].nextSibling.nodeValue = " Une attaque exploitant les vulnérabilités d'un pare-feu pour accéder à un réseau sécurisé.";
-                    radioElements[3].nextSibling.nodeValue = " Une attaque de phishing visant à obtenir des informations sensibles en usurpant l'identité d'un site web.";
+                    questionElement.innerHTML = "Quel est le mécanisme utilisé par DHCP pour éviter les conflits d'adresses IP ?";
+                    radioElements[0].nextSibling.nodeValue = "Enregistrement des adresses IP dans une base de données centrale.";
+                    radioElements[1].nextSibling.nodeValue = "Renouvellement périodique des adresses IP.";
+                    radioElements[2].nextSibling.nodeValue = "Utilisation de baux DHCP avec une durée limitée.";
+                    radioElements[3].nextSibling.nodeValue = "Attribution d'adresses IP statiques à chaque appareil.";
                     // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[1].value = "a"; // Correct answer
-                    radioElements[0].value = "b";
-                    radioElements[2].value = "c";
+                    radioElements[0].value = "c"; 
+                    radioElements[1].value = "a";// Réponse correcte
+                    radioElements[2].value = "b";
                     radioElements[3].value = "d";
                     break;
                 case 3:
-                    questionElement.innerHTML = "Quelle est la différence entre ARP (Address Resolution Protocol) et RARP (Reverse Address Resolution Protocol)?";
-                    radioElements[0].nextSibling.nodeValue = " ARP est utilisé pour associer des adresses MAC à des adresses IP, tandis que RARP est utilisé pour associer des adresses IP à des adresses MAC.";
-                    radioElements[1].nextSibling.nodeValue = " ARP est utilisé pour associer des adresses IP à des adresses MAC, tandis que RARP est utilisé pour résoudre des noms de domaine.";
-                    radioElements[2].nextSibling.nodeValue = " ARP est utilisé pour résoudre les adresses IP des serveurs DNS, tandis que RARP est utilisé pour configurer les adresses IP dynamiquement.";
-                    radioElements[3].nextSibling.nodeValue = " ARP est utilisé pour router les paquets de données sur un réseau, tandis que RARP est utilisé pour vérifier la fiabilité des connexions réseau.";
+                    questionElement.innerHTML = "Quel est le port utilisé par le protocole DHCP pour les communications ?";
+                    radioElements[0].nextSibling.nodeValue = "Port 80";
+                    radioElements[1].nextSibling.nodeValue = "Port 443";
+                    radioElements[2].nextSibling.nodeValue = "Port 53";
+                    radioElements[3].nextSibling.nodeValue = "Port 67/68";
                     // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[0].value = "a"; // Correct answer
+                    radioElements[0].value = "d"; 
                     radioElements[1].value = "b";
                     radioElements[2].value = "c";
-                    radioElements[3].value = "d";
+                    radioElements[3].value = "a";// Réponse correcte
                     break;
                 case 4:
-                    questionElement.innerHTML = "Si une attaque ARP est réalisée, quelle couche OSI est affectée ?";
-                    radioElements[0].nextSibling.nodeValue = " Couche physique";
-                    radioElements[1].nextSibling.nodeValue = " Couche liaison de données";
-                    radioElements[2].nextSibling.nodeValue = " Couche réseau ";
-                    radioElements[3].nextSibling.nodeValue = " Couche transport";
+                    questionElement.innerHTML = "Quelle est la conséquence d'une panne du serveur DHCP ?";
+                    radioElements[0].nextSibling.nodeValue = "Tous les appareils perdent leur connexion réseau.";
+                    radioElements[1].nextSibling.nodeValue = "Les adresses IP attribuées expireront et les appareils devront redemander une adresse.";
+                    radioElements[2].nextSibling.nodeValue = "Les appareils conserveront leurs adresses IP actuelles jusqu'à la résolution du problème.";
+                    radioElements[3].nextSibling.nodeValue = "Le serveur DNS prendra en charge la distribution des adresses IP.";
                     // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[0].value = "b"; // Correct answer
-                    radioElements[1].value = "a";
-                    radioElements[2].value = "c";
+                    radioElements[0].value = "b"; 
+                    radioElements[1].value = "c";// Réponse correcte
+                    radioElements[2].value = "a";
                     radioElements[3].value = "d";
                     break;
-
                 default:
                     // Si toutes les questions ont été posées, réinitialisez la variable currentQuestion
                     currentQuestion = 1;
@@ -130,28 +129,29 @@
         }
 
         function showPopupFinal() {
-    var popupButton = document.getElementById('popup-button');
-    
-    // Redirigez vers la page "section.php" lorsque le bouton est cliqué
-    popupButton.onclick = function() {
-        window.location.href = "section.php";
-    };
+            var popupButton = document.getElementById('popup-button');
+            popupButton.innerHTML = "Retourner aux sections";
+            
+            // Redirection vers la page "section.php" lorsque le bouton "Retourner aux sections" est cliqué
+            popupButton.onclick = function() {
+                window.location.href = "section.php";
+            };
 
-    var popupText = document.getElementById('popup-text');
-    popupText.innerHTML = "Bravo, tu es désormais un vrai professionnel du protocole ARP.<br>Voulez-vous retourner aux sections ou en savoir plus sur le protocole ARP ?";
-    popupButton.innerHTML = "Retourner aux sections";
-    // Ajout du bouton "En savoir plus sur ce protocole"
-    var learnMoreButton = document.createElement('button');
-    learnMoreButton.innerHTML = "En savoir plus sur ce protocole";
-    learnMoreButton.onclick = function() {
-        // Redirection vers la page d'informations ARP lorsque le bouton est cliqué
-        window.location.href = "en_savoir_plus_arp.php";
-    };
-    popupText.appendChild(document.createElement('br'));
-    popupText.appendChild(learnMoreButton);
+            var popupText = document.getElementById('popup-text');
+            popupText.innerHTML = "Bravo, tu es désormais un expert du protocole DHCP !<br>Veux-tu retourner aux sections ou en savoir plus sur le protocole DHCP ?";
+            
+            // Ajout du bouton "En savoir plus sur ce protocole"
+            var learnMoreButton = document.createElement('button');
+            learnMoreButton.innerHTML = "En savoir plus sur ce protocole";
+            learnMoreButton.onclick = function() {
+                // Redirection vers la page d'informations DHCP lorsque le bouton est cliqué
+                window.location.href = "en_savoir_plus_dhcp.php";
+            };
+            popupText.appendChild(document.createElement('br'));
+            popupText.appendChild(learnMoreButton);
 
-    showPopup();
-}
+            showPopup();
+        }
 
         function submitForm(event) {
             event.preventDefault(); // Empêche le rechargement de la page
@@ -174,13 +174,13 @@
     </script>
 </head>
 <body>
-    <h1>Quiz sur le Protocole ARP</h1>
+    <h1>Quiz sur le Protocole DHCP</h1>
     <form onsubmit="submitForm(event)">
-        <p>Qu'est-ce que le protocole ARP (Address Resolution Protocol)?</p>
-        <input type="radio" name="reponse" value="c"> Un protocole de sécurité utilisé pour chiffrer les communications réseau.<br>
-        <input type="radio" name="reponse" value="b"> Un protocole de routage utilisé pour déterminer le meilleur chemin pour les paquets de données.<br>
-        <input type="radio" name="reponse" value="a"> Un protocole de résolution d'adresse utilisé pour associer des adresses IP à des adresses MAC.<br>
-        <input type="radio" name="reponse" value="d"> Un protocole de transfert de fichiers utilisé pour copier des données entre des serveurs distants.<br>
+        <p>Quelle est la fonction principale du protocole DHCP (Dynamic Host Configuration Protocol) ?</p>
+        <input type="radio" name="reponse" value="a"> Attribution dynamique des adresses IP aux appareils du réseau.<br>
+        <input type="radio" name="reponse" value="b"> Routage des paquets de données sur Internet.<br>
+        <input type="radio" name="reponse" value="c"> Traduction des noms de domaine en adresses IP.<br>
+        <input type="radio" name="reponse" value="d"> Chiffrement des communications réseau pour assurer la confidentialité des données.<br>
         <input type="submit" value="Soumettre">
     </form>
 

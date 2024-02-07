@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz sur le Protocole ARP</title>
+    <title>Quiz sur le Protocole HTTP</title>
     <style>
-        /* Style pour le pop-up */
+        /* Styles pour le pop-up */
         .popup {
             display: none;
             position: fixed;
@@ -72,42 +72,41 @@
 
             switch (currentQuestion) {
                 case 2:
-                    questionElement.innerHTML = "Qu'est-ce qu'une attaque ARP?";
-                    radioElements[0].nextSibling.nodeValue = " Une attaque visant à compromettre les informations stockées dans les cookies d'un navigateur.";
-                    radioElements[1].nextSibling.nodeValue = " Une attaque ciblant le protocole de résolution d'adresse pour associer de manière incorrecte des adresses IP à des adresses MAC.";
-                    radioElements[2].nextSibling.nodeValue = " Une attaque exploitant les vulnérabilités d'un pare-feu pour accéder à un réseau sécurisé.";
-                    radioElements[3].nextSibling.nodeValue = " Une attaque de phishing visant à obtenir des informations sensibles en usurpant l'identité d'un site web.";
+                    questionElement.innerHTML = "Quelle méthode HTTP est utilisée par un navigateur lorsqu'un utilisateur soumet un formulaire en ligne ?";
+                    radioElements[0].nextSibling.nodeValue = " GET";
+                    radioElements[1].nextSibling.nodeValue = " POST";
+                    radioElements[2].nextSibling.nodeValue = " PUT";
+                    radioElements[3].nextSibling.nodeValue = " DELETE";
                     // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[1].value = "a"; // Correct answer
-                    radioElements[0].value = "b";
+                    radioElements[0].value = "b"; 
+                    radioElements[1].value = "a";// Réponse correcte
                     radioElements[2].value = "c";
                     radioElements[3].value = "d";
                     break;
                 case 3:
-                    questionElement.innerHTML = "Quelle est la différence entre ARP (Address Resolution Protocol) et RARP (Reverse Address Resolution Protocol)?";
-                    radioElements[0].nextSibling.nodeValue = " ARP est utilisé pour associer des adresses MAC à des adresses IP, tandis que RARP est utilisé pour associer des adresses IP à des adresses MAC.";
-                    radioElements[1].nextSibling.nodeValue = " ARP est utilisé pour associer des adresses IP à des adresses MAC, tandis que RARP est utilisé pour résoudre des noms de domaine.";
-                    radioElements[2].nextSibling.nodeValue = " ARP est utilisé pour résoudre les adresses IP des serveurs DNS, tandis que RARP est utilisé pour configurer les adresses IP dynamiquement.";
-                    radioElements[3].nextSibling.nodeValue = " ARP est utilisé pour router les paquets de données sur un réseau, tandis que RARP est utilisé pour vérifier la fiabilité des connexions réseau.";
+                    questionElement.innerHTML = "Quelle est la signification du code de statut HTTP '404 Not Found' ?";
+                    radioElements[0].nextSibling.nodeValue = " La requête a été acceptée et traitée avec succès.";
+                    radioElements[1].nextSibling.nodeValue = " Le serveur a rencontré une erreur interne.";
+                    radioElements[2].nextSibling.nodeValue = " La ressource demandée n'a pas été trouvée sur le serveur.";
+                    radioElements[3].nextSibling.nodeValue = " La requête nécessite une authentification.";
                     // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[0].value = "a"; // Correct answer
-                    radioElements[1].value = "b";
-                    radioElements[2].value = "c";
+                    radioElements[1].value = "c"; 
+                    radioElements[0].value = "b";
+                    radioElements[2].value = "a";    // Réponse correcte
                     radioElements[3].value = "d";
                     break;
-                case 4:
-                    questionElement.innerHTML = "Si une attaque ARP est réalisée, quelle couche OSI est affectée ?";
-                    radioElements[0].nextSibling.nodeValue = " Couche physique";
-                    radioElements[1].nextSibling.nodeValue = " Couche liaison de données";
-                    radioElements[2].nextSibling.nodeValue = " Couche réseau ";
-                    radioElements[3].nextSibling.nodeValue = " Couche transport";
-                    // Mettez à jour la réponse correcte et les mauvaises réponses
-                    radioElements[0].value = "b"; // Correct answer
-                    radioElements[1].value = "a";
-                    radioElements[2].value = "c";
-                    radioElements[3].value = "d";
-                    break;
-
+                    case 4:
+    questionElement.innerHTML = "Quelle est l'une des formes courantes d'attaque contre les applications Web qui exploite les failles de sécurité des sites HTTP ?";
+    radioElements[0].nextSibling.nodeValue = "Injection SQL";
+    radioElements[1].nextSibling.nodeValue = "Cross-Site Scripting (XSS)";
+    radioElements[2].nextSibling.nodeValue = "Attaque par force brute";
+    radioElements[3].nextSibling.nodeValue = "Attaque par déni de service (DDoS)";
+    // Mettez à jour la réponse correcte et les mauvaises réponses
+    radioElements[0].value = "b"; 
+    radioElements[1].value = "a"; // Réponse correcte
+    radioElements[2].value = "c";
+    radioElements[3].value = "d";
+    break;
                 default:
                     // Si toutes les questions ont été posées, réinitialisez la variable currentQuestion
                     currentQuestion = 1;
@@ -130,28 +129,29 @@
         }
 
         function showPopupFinal() {
-    var popupButton = document.getElementById('popup-button');
-    
-    // Redirigez vers la page "section.php" lorsque le bouton est cliqué
-    popupButton.onclick = function() {
-        window.location.href = "section.php";
-    };
+            var popupButton = document.getElementById('popup-button');
+            popupButton.innerHTML = "Retourner aux sections";
+            
+            // Redirection vers la page "section.php" lorsque le bouton "Retourner aux sections" est cliqué
+            popupButton.onclick = function() {
+                window.location.href = "section.php";
+            };
 
-    var popupText = document.getElementById('popup-text');
-    popupText.innerHTML = "Bravo, tu es désormais un vrai professionnel du protocole ARP.<br>Voulez-vous retourner aux sections ou en savoir plus sur le protocole ARP ?";
-    popupButton.innerHTML = "Retourner aux sections";
-    // Ajout du bouton "En savoir plus sur ce protocole"
-    var learnMoreButton = document.createElement('button');
-    learnMoreButton.innerHTML = "En savoir plus sur ce protocole";
-    learnMoreButton.onclick = function() {
-        // Redirection vers la page d'informations ARP lorsque le bouton est cliqué
-        window.location.href = "en_savoir_plus_arp.php";
-    };
-    popupText.appendChild(document.createElement('br'));
-    popupText.appendChild(learnMoreButton);
+            var popupText = document.getElementById('popup-text');
+            popupText.innerHTML = "Bravo, tu es désormais un expert du protocole HTTP !<br>Voulez-vous retourner aux sections ou en savoir plus sur le protocole HTTP ?";
+            
+            // Ajout du bouton "En savoir plus sur ce protocole"
+            var learnMoreButton = document.createElement('button');
+            learnMoreButton.innerHTML = "En savoir plus sur ce protocole";
+            learnMoreButton.onclick = function() {
+                // Redirection vers la page d'informations HTTP lorsque le bouton est cliqué
+                window.location.href = "en_savoir_plus_http.php";
+            };
+            popupText.appendChild(document.createElement('br'));
+            popupText.appendChild(learnMoreButton);
 
-    showPopup();
-}
+            showPopup();
+        }
 
         function submitForm(event) {
             event.preventDefault(); // Empêche le rechargement de la page
@@ -174,13 +174,13 @@
     </script>
 </head>
 <body>
-    <h1>Quiz sur le Protocole ARP</h1>
+    <h1>Quiz sur le Protocole HTTP</h1>
     <form onsubmit="submitForm(event)">
-        <p>Qu'est-ce que le protocole ARP (Address Resolution Protocol)?</p>
-        <input type="radio" name="reponse" value="c"> Un protocole de sécurité utilisé pour chiffrer les communications réseau.<br>
-        <input type="radio" name="reponse" value="b"> Un protocole de routage utilisé pour déterminer le meilleur chemin pour les paquets de données.<br>
-        <input type="radio" name="reponse" value="a"> Un protocole de résolution d'adresse utilisé pour associer des adresses IP à des adresses MAC.<br>
-        <input type="radio" name="reponse" value="d"> Un protocole de transfert de fichiers utilisé pour copier des données entre des serveurs distants.<br>
+        <p>Qu'est-ce que l'acronyme HTTP signifie ?</p>
+        <input type="radio" name="reponse" value="c"> HyperText Transfer Process<br>
+        <input type="radio" name="reponse" value="a"> HyperText Transfer Protocol<br>
+        <input type="radio" name="reponse" value="b"> HyperText Transmission Process<br>
+        <input type="radio" name="reponse" value="d"> HyperText Transmission Protocol<br>
         <input type="submit" value="Soumettre">
     </form>
 
