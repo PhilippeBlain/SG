@@ -10,6 +10,7 @@
     <h1>Sélectionnez une section :</h1>
     <ul>
         <li><a href="protocole.php">Protocoles</a></li>
+        <li><a href="attaques.php">Les différentes attaques</a></li>
         <!-- Ajoutez d'autres sections au besoin -->
     </ul>
 </body>
