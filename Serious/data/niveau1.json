@@ -1,0 +1,62 @@
+[
+    {
+        "sujet": "Alerte de sécurité : Action requise",
+        "corps": "Nous avons détecté une activité suspecte sur votre compte. Veuillez cliquer sur le lien ci-dessous pour vérifier votre identité.",
+        "lien": "http://verify-youraccount.fakebank.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Votre facture mobile est prête",
+        "corps": "Votre dernière facture mobile est maintenant disponible. Veuillez vous connecter à votre espace client pour la consulter.",
+        "lien": "https://clientarea.legitmobile.com",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Réinitialisez votre mot de passe",
+        "corps": "Pour des raisons de sécurité, nous vous demandons de réinitialiser votre mot de passe. Cliquez ici pour procéder.",
+        "lien": "http://reset-password.fakeemail.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Confirmation de commande Amazon",
+        "corps": "Merci pour votre achat. Votre commande Amazon a été confirmée. Détails de la commande à l'intérieur.",
+        "lien": "https://amazon.com/order-details",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Mise à jour obligatoire de votre compte PayPal",
+        "corps": "Une mise à jour de sécurité est requise pour votre compte PayPal. Cliquez sur le lien suivant pour effectuer cette mise à jour.",
+        "lien": "http://update.paypal.fakeupdate.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Notification d'accès au compte",
+        "corps": "Un nouvel appareil s'est connecté à votre compte. Si ce n'était pas vous, veuillez suivre notre procédure de sécurité.",
+        "lien": "https://security.legitbank.com/account-activity",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Gagnez un iPhone 12 gratuitement",
+        "corps": "Félicitations ! Vous avez été sélectionné pour une chance de gagner un iPhone 12 sans frais. Cliquez pour participer.",
+        "lien": "http://win-freeiphone.fakecontest.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Votre abonnement Netflix expire aujourd'hui",
+        "corps": "Votre abonnement Netflix est sur le point d'expirer. Renouvelez-le maintenant pour continuer à profiter de nos services sans interruption.",
+        "lien": "https://netflix.com/renewal",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Action urgente requise pour votre compte Google",
+        "corps": "Nous avons détecté une tentative de piratage sur votre compte. Veuillez immédiatement le sécuriser en cliquant ici.",
+        "lien": "http://google-account.fakealert.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Confirmation d'inscription à la newsletter",
+        "corps": "Vous vous êtes inscrit avec succès à notre newsletter. Restez à l'écoute pour plus de mises à jour.",
+        "lien": "https://legitwebsite.com/newsletter",
+        "est_phishing": false
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "sujet": "Notification de connexion inhabituelle",
+        "corps": "Nous avons détecté une connexion inhabituelle sur votre compte depuis un nouvel appareil. Veuillez confirmer qu'il s'agit bien de vous via le lien suivant.",
+        "lien": "https://account-security.realwebsite.com/verification",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Votre abonnement Spotify Premium est prêt à expirer",
+        "corps": "Votre abonnement Spotify Premium expirera dans 3 jours. Renouvelez-le dès maintenant pour éviter toute interruption.",
+        "lien": "http://spotify-renew.fake-renew.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Important : Mise à jour de notre politique de confidentialité",
+        "corps": "Nous avons mis à jour notre politique de confidentialité. Veuillez la lire et l'accepter pour continuer à utiliser nos services sans interruption.",
+        "lien": "https://update.realwebsite.com/policy",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Vérification de compte requise immédiatement",
+        "corps": "Une activité suspecte a été détectée, et votre compte sera suspendu si vous ne vérifiez pas vos informations dans les 24 heures.",
+        "lien": "http://urgent-verification.accountsecurity.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Vous avez reçu un paiement",
+        "corps": "Un paiement a été envoyé à votre compte. Cliquez ici pour le visualiser.",
+        "lien": "https://payments.realpaymentprocessor.com/view",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Confirmation de changement de mot de passe",
+        "corps": "Votre mot de passe a été changé avec succès. Si vous n'avez pas effectué cette modification, veuillez suivre ce lien immédiatement.",
+        "lien": "http://fake-securityalert.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Dernier rappel : renouvelez votre nom de domaine",
+        "corps": "Votre nom de domaine est sur le point d'expirer. Évitez de perdre votre nom de domaine en le renouvelant dès aujourd'hui.",
+        "lien": "https://domain-renewal.realhosting.com",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Action requise : Votre compte e-mail est sur le point d'être désactivé",
+        "corps": "En raison d'une inactivité prolongée, votre compte e-mail sera bientôt désactivé. Réactivez-le en cliquant sur le lien ci-dessous.",
+        "lien": "http://reactivate-now.emailservice.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Félicitations, vous avez gagné un bon d'achat de 500 € !",
+        "corps": "Cliquez ici pour réclamer votre bon d'achat. Offre limitée aux 100 premiers utilisateurs.",
+        "lien": "http://claim-your-prize.now.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Rappel : Votre facture est prête",
+        "corps": "Votre dernière facture est maintenant disponible. Veuillez vous connecter à votre compte pour la consulter.",
+        "lien": "https://account.realutilityprovider.com/invoice",
+        "est_phishing": false
+    }
+]

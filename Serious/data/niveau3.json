@@ -1,0 +1,62 @@
+[
+    {
+        "sujet": "Avis de violation de données - Action immédiate requise",
+        "corps": "Suite à une récente violation de données, nous demandons à tous les utilisateurs de réinitialiser leur mot de passe comme mesure de précaution. Cliquez ici pour commencer.",
+        "lien": "https://account-update.veryrealwebsite.com/security-update",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Votre compte a été temporairement verrouillé",
+        "corps": "En raison de plusieurs tentatives de connexion échouées, votre compte a été verrouillé. Veuillez le déverrouiller en utilisant le lien suivant.",
+        "lien": "http://unlock-account.suspicious-action.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Notification urgente : mise à jour de sécurité critique",
+        "corps": "Une mise à jour de sécurité critique est disponible pour votre système d'exploitation. Il est impératif de l'appliquer immédiatement pour protéger vos données personnelles.",
+        "lien": "https://os-update.genuineupdatecenter.com",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Dernier avertissement : renouvellement de licence logicielle expiré",
+        "corps": "Votre licence logicielle a expiré. Sans renouvellement, votre accès sera suspendu. Renouvelez maintenant pour éviter toute interruption.",
+        "lien": "http://software-license.renewal-fakepage.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Confirmation de paiement reçu",
+        "corps": "Nous avons reçu votre paiement de 49,99 €. Cliquez ici pour voir les détails de la transaction et le reçu.",
+        "lien": "https://transactions.realpaymentprocessor.com/confirmation",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Enquête exclusive pour les utilisateurs sélectionnés",
+        "corps": "Félicitations, vous avez été choisi pour participer à notre enquête exclusive. Complétez-la pour gagner un bon d'achat de 100 €.",
+        "lien": "http://exclusive-survey.fakeprize.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Alerte de sécurité : Nouvelle tentative de connexion détectée",
+        "corps": "Une nouvelle tentative de connexion à votre compte a été détectée à partir d'un emplacement inhabituel. Si ce n'était pas vous, veuillez changer immédiatement votre mot de passe.",
+        "lien": "https://account-security.officialwebsite.com",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Action requise : mise à jour de votre méthode de paiement",
+        "corps": "Votre dernière facture n'a pas pu être traitée en raison d'un problème avec votre méthode de paiement. Veuillez mettre à jour vos informations de paiement.",
+        "lien": "http://update-payment-method.scamalert.com",
+        "est_phishing": true
+    },
+    {
+        "sujet": "Vous avez un nouveau message vocal",
+        "corps": "Un nouveau message vocal a été reçu sur votre compte. Cliquez ici pour l'écouter immédiatement.",
+        "lien": "https://voicemail.access-message.com",
+        "est_phishing": false
+    },
+    {
+        "sujet": "Important : Mise à jour requise de vos informations de compte",
+        "corps": "Pour continuer à utiliser nos services sans interruption, une mise à jour de vos informations de compte est requise.",
+        "lien": "http://account-update.urgent-requirement.com",
+        "est_phishing": true
+    }
+]
