@@ -11,7 +11,7 @@
     <ul>
         <li><a href="protocole.php">Protocoles</a></li>
         <li><a href="attaques.php">Les différentes attaques</a></li>
-        <!-- Ajoutez d'autres sections au besoin -->
+        <li><a href="challenges.php">Des challenges cyber</a></li>
     </ul>
 </body>
 </html>

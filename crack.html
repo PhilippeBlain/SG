@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Simple Crackme</title>
+<script type="text/javascript">
+function crackme(pass)
+{
+ a1=a2=a3='';  
+
+ 
+   for (var i = 0; i < pass.length; i++) {
+        
+		a1 += String.fromCharCode( (pass.charCodeAt(i) + 28) % 256);
+        a2 += String.fromCharCode(a1.charCodeAt(i) ^ 226 );
+    }
+	
+  a3=btoa(a2);
+  
+  return (a3=="h42DvXW8bLJwro6uc2y9rY5srWtnrWy9ZrJqaq1oYa17")
+ 
+}
+</script>
+</head>
+<body>
+<form >
+<div>
+<input type="text" name="password" />
+<input type="button" value="Envoyer" onclick="alert((crackme(password.value) ? 'Bravo!' : 'Incorrect!'));; " />
+
+<!-- ** -->
+</div>
+</form>
+</body>
+</html>

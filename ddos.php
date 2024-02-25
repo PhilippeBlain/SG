@@ -180,7 +180,7 @@
         <p>Qu'est-ce qu'une attaque DDoS (Distributed Denial of Service) ?</p>
         <input type="radio" name="reponse" value="c"> Destruction de Données sur le Système.<br>
         <input type="radio" name="reponse" value="b"> Déconnexion Directe du Système.<br>
-        <input type="radio" name="reponse" value="a"> Distributed Denial of Service.<br>
+        <input type="radio" name="reponse" value="a"> Déni de service distribué<br>
         <input type="radio" name="reponse" value="d"> Double Débordement de Système.<br>
         <input type="submit" value="Soumettre">
     </form>
